@@ -1,18 +1,20 @@
 import { Brain, Zap, Bot, Database } from "lucide-react";
-import { FloatingOrb } from "@/components/ui/parallax";
+import { FloatingOrb, FloatingParticles, ParallaxBackground } from "@/components/ui/parallax";
 
 const SolutionSection = () => {
   return (
     <section id="solucao" className="py-24 relative overflow-hidden">
+      <ParallaxBackground className="radial-gradient opacity-40" speed={0.35} />
+      <FloatingParticles count={5} />
       <FloatingOrb 
-        className="bg-primary/5 -top-20 -right-20" 
-        size="w-80 h-80"
-        speed={0.4}
+        className="bg-primary/15 -top-20 -right-20" 
+        size="w-96 h-96"
+        speed={0.7}
       />
       <FloatingOrb 
-        className="bg-primary/3 bottom-0 -left-20" 
-        size="w-64 h-64"
-        speed={0.3}
+        className="bg-[hsl(200_100%_55%)]/10 bottom-0 -left-20" 
+        size="w-72 h-72"
+        speed={0.5}
       />
       
       <div className="container mx-auto px-4 relative z-10">
