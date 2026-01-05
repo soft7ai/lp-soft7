@@ -1,11 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Shield, Users } from "lucide-react";
+import { FloatingOrb, ParallaxBackground } from "@/components/ui/parallax";
 
 const CTASection = () => {
   return (
     <section className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl" />
+      <ParallaxBackground className="bg-gradient-to-b from-background via-primary/5 to-background" speed={0.15} />
+      <FloatingOrb 
+        className="bg-primary/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" 
+        size="w-[600px] h-[600px]"
+        speed={0.25}
+      />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">

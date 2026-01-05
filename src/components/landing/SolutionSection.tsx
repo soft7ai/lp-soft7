@@ -1,9 +1,21 @@
-import { Brain, Zap, Bot, Database, ArrowRight } from "lucide-react";
+import { Brain, Zap, Bot, Database } from "lucide-react";
+import { FloatingOrb } from "@/components/ui/parallax";
 
 const SolutionSection = () => {
   return (
-    <section id="solucao" className="py-24 relative">
-      <div className="container mx-auto px-4">
+    <section id="solucao" className="py-24 relative overflow-hidden">
+      <FloatingOrb 
+        className="bg-primary/5 -top-20 -right-20" 
+        size="w-80 h-80"
+        speed={0.4}
+      />
+      <FloatingOrb 
+        className="bg-primary/3 bottom-0 -left-20" 
+        size="w-64 h-64"
+        speed={0.3}
+      />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* What you need */}
           <div className="text-center mb-16">
@@ -22,7 +34,11 @@ const SolutionSection = () => {
 
           {/* What is Soft7 AI */}
           <div className="rounded-3xl p-8 md:p-12 card-gradient border border-primary/20 glow relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+            <FloatingOrb 
+              className="bg-primary/10 -top-10 -right-10" 
+              size="w-64 h-64"
+              speed={0.2}
+            />
             
             <div className="relative z-10">
               <div className="flex items-center gap-3 mb-6">
