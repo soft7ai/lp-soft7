@@ -98,11 +98,11 @@ const SolutionSection = () => {
                       <div className="absolute top-4 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-zinc-700 z-10" />
                       
                       {/* Screen */}
-                      <div className="relative rounded-[1.5rem] overflow-hidden aspect-[4/3]">
+                      <div className="relative rounded-[1.5rem] overflow-hidden">
                         <img 
                           src={dashboardPreview} 
                           alt="Soft7 AI Dashboard - Visão geral do sistema de vendas"
-                          className="w-full h-full object-cover object-top"
+                          className="w-full h-auto"
                         />
                         {/* Screen Glare Effect */}
                         <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent pointer-events-none" />
