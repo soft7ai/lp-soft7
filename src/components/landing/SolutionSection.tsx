@@ -1,0 +1,81 @@
+import { Brain, Zap, Bot, Database, ArrowRight } from "lucide-react";
+
+const SolutionSection = () => {
+  return (
+    <section id="solucao" className="py-24 relative">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          {/* What you need */}
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Não é mais gente. Não é mais ferramenta.
+            </h2>
+            <p className="text-xl text-muted-foreground mb-4">
+              Você precisa de <span className="text-primary font-semibold">presença</span>,{" "}
+              <span className="text-primary font-semibold">timing</span> e{" "}
+              <span className="text-primary font-semibold">continuidade</span> — sempre.
+            </p>
+            <p className="text-lg text-primary font-medium">
+              👉 É exatamente aqui que a Soft7 AI atua.
+            </p>
+          </div>
+
+          {/* What is Soft7 AI */}
+          <div className="rounded-3xl p-8 md:p-12 card-gradient border border-primary/20 glow relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+            
+            <div className="relative z-10">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
+                  <Brain className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">O que é</p>
+                  <h3 className="text-2xl font-bold">Soft7 AI</h3>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="flex items-center gap-3 p-4 rounded-xl bg-background/50 border border-border/50">
+                  <Bot className="h-5 w-5 text-muted-foreground" />
+                  <span className="text-muted-foreground line-through">Não é chatbot</span>
+                </div>
+                <div className="flex items-center gap-3 p-4 rounded-xl bg-background/50 border border-border/50">
+                  <Database className="h-5 w-5 text-muted-foreground" />
+                  <span className="text-muted-foreground line-through">Não é CRM</span>
+                </div>
+                <div className="flex items-center gap-3 p-4 rounded-xl bg-background/50 border border-border/50">
+                  <Zap className="h-5 w-5 text-muted-foreground" />
+                  <span className="text-muted-foreground line-through">Não é automação fria</span>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <h4 className="text-2xl md:text-3xl font-bold mb-4">
+                  A Soft7 AI é o{" "}
+                  <span className="text-gradient">sistema nervoso do seu comercial.</span>
+                </h4>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Uma engenharia de vendas com IA que assume toda a parte invisível do processo — antes do fechamento — 
+                  garantindo resposta imediata, acompanhamento contínuo e prioridade correta.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Control message */}
+          <div className="mt-12 text-center p-8 rounded-2xl border border-destructive/30 bg-destructive/5">
+            <h4 className="text-xl md:text-2xl font-bold mb-2">
+              Se você não enxerga, você não controla.
+            </h4>
+            <p className="text-muted-foreground">
+              E se você não controla, está aceitando perder vendas todos os dias.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SolutionSection;
