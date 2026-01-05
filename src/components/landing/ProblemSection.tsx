@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Moon, HelpCircle, Brain, Users, Ghost, Eye, ArrowRight } from "lucide-react";
+import { StaggerContainer, StaggerItem } from "@/components/ui/scroll-reveal";
 
 const problems = [
   { icon: Moon, text: "Lead chega à noite e fica para depois" },
@@ -22,21 +23,20 @@ const ProblemSection = () => {
             Se você identificar pelo menos 2 dessas situações, sua empresa tem um vazamento ativo.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-4 mb-12">
+          <StaggerContainer className="grid md:grid-cols-2 gap-4 mb-12" staggerDelay={0.1}>
             {problems.map((problem, index) => (
-              <div
-                key={index}
-                className="flex items-start gap-4 p-5 rounded-xl card-gradient border border-border/50 hover:border-primary/30 transition-all duration-300 group"
-              >
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center">
-                  <problem.icon className="h-5 w-5 text-destructive" />
+              <StaggerItem key={index}>
+                <div className="flex items-start gap-4 p-5 rounded-xl card-gradient border border-border/50 hover:border-primary/30 transition-all duration-300 group h-full">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center">
+                    <problem.icon className="h-5 w-5 text-destructive" />
+                  </div>
+                  <p className="text-foreground group-hover:text-foreground/90 transition-colors">
+                    {problem.text}
+                  </p>
                 </div>
-                <p className="text-foreground group-hover:text-foreground/90 transition-colors">
-                  {problem.text}
-                </p>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
 
           <div className="text-center">
             <p className="text-xl font-semibold text-primary mb-6">

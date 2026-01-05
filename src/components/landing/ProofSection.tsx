@@ -1,4 +1,5 @@
 import { Clock, RotateCcw, Trophy, TrendingDown } from "lucide-react";
+import { StaggerContainer, StaggerItem } from "@/components/ui/scroll-reveal";
 
 const proofs = [
   { icon: Clock, text: "Atraso reduz drasticamente conversão" },
@@ -19,19 +20,18 @@ const ProofSection = () => {
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4 mb-12">
+          <StaggerContainer className="grid sm:grid-cols-2 gap-4 mb-12" staggerDelay={0.1}>
             {proofs.map((proof, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-4 p-5 rounded-xl bg-card border border-border/50"
-              >
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <proof.icon className="h-5 w-5 text-primary" />
+              <StaggerItem key={index}>
+                <div className="flex items-center gap-4 p-5 rounded-xl bg-card border border-border/50 h-full">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <proof.icon className="h-5 w-5 text-primary" />
+                  </div>
+                  <p className="text-foreground font-medium">{proof.text}</p>
                 </div>
-                <p className="text-foreground font-medium">{proof.text}</p>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
 
           <div className="text-center p-6 rounded-2xl border border-primary/30 bg-primary/5">
             <p className="text-lg font-semibold">

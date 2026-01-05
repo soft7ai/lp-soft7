@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { StaggerContainer, StaggerItem } from "@/components/ui/scroll-reveal";
 
 const faqs = [
   {
@@ -32,22 +33,25 @@ const FAQSection = () => {
             </h2>
           </div>
 
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="rounded-xl border border-border/50 bg-card px-6 data-[state=open]:border-primary/30"
-              >
-                <AccordionTrigger className="text-left text-lg font-medium hover:no-underline hover:text-primary py-6">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-6">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+          <StaggerContainer staggerDelay={0.15}>
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqs.map((faq, index) => (
+                <StaggerItem key={index}>
+                  <AccordionItem
+                    value={`item-${index}`}
+                    className="rounded-xl border border-border/50 bg-card px-6 data-[state=open]:border-primary/30"
+                  >
+                    <AccordionTrigger className="text-left text-lg font-medium hover:no-underline hover:text-primary py-6">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground pb-6">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                </StaggerItem>
+              ))}
+            </Accordion>
+          </StaggerContainer>
         </div>
       </div>
     </section>
