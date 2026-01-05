@@ -1,5 +1,5 @@
 import { ArrowRight, MessageCircle, Clock, Target } from "lucide-react";
-import { FloatingOrb, ParallaxBackground } from "@/components/ui/parallax";
+import { FloatingOrb, ParallaxBackground, FloatingParticles } from "@/components/ui/parallax";
 import { CTAButton } from "@/components/ui/cta-button";
 import { TypeWriterMulti } from "@/components/ui/typewriter";
 import { motion } from "framer-motion";
@@ -7,16 +7,24 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+      {/* Floating particles */}
+      <FloatingParticles count={8} />
+      
       {/* Background effects with parallax */}
-      <ParallaxBackground className="radial-gradient" />
+      <ParallaxBackground className="radial-gradient" speed={0.4} />
       <FloatingOrb 
-        className="bg-primary/10 top-1/4 left-1/4" 
+        className="bg-primary/20 top-1/4 left-1/4" 
         size="w-96 h-96"
-        speed={0.3}
+        speed={0.6}
       />
       <FloatingOrb 
-        className="bg-primary/5 bottom-1/4 right-1/4" 
+        className="bg-[hsl(200_100%_55%)]/15 bottom-1/4 right-1/4" 
         size="w-80 h-80"
+        speed={0.8}
+      />
+      <FloatingOrb 
+        className="bg-primary/10 top-1/2 right-1/3" 
+        size="w-64 h-64"
         speed={0.5}
       />
       
