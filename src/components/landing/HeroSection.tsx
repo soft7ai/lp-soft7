@@ -37,7 +37,7 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 min-h-[3.5em] md:min-h-[2.5em]">
             <TypeWriterMulti
               lines={[
-                { text: "Existe um ladrão silencioso operando dentro da sua empresa — " },
+                { text: "Existe um ladrão silencioso operando dentro da sua empresa " },
                 { text: "e ele está custando vendas todos os dias.", className: "text-gradient" },
               ]}
               speed={25}
