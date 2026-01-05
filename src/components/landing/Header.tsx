@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Brain, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logoWhite from "@/assets/logo-white.png";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,10 +11,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <a href="#" className="flex items-center gap-2">
-            <Brain className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold tracking-tight">
-              Soft7 <span className="text-primary">AI</span>
-            </span>
+            <img src={logoWhite} alt="Soft7 AI" className="h-8 w-auto" />
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
