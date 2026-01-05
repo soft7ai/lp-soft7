@@ -62,17 +62,17 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 3.3 }}
             className="flex flex-wrap justify-center gap-4 mb-10"
           >
-            <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary/50 border border-border">
+            <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card/80 border border-primary/20 backdrop-blur-sm">
               <MessageCircle className="h-4 w-4 text-destructive" />
-              <span className="text-sm text-muted-foreground">WhatsApp sem resposta</span>
+              <span className="text-sm text-foreground/80">WhatsApp sem resposta</span>
             </div>
-            <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary/50 border border-border">
+            <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card/80 border border-primary/20 backdrop-blur-sm">
               <Clock className="h-4 w-4 text-destructive" />
-              <span className="text-sm text-muted-foreground">Conversas que param</span>
+              <span className="text-sm text-foreground/80">Conversas que param</span>
             </div>
-            <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary/50 border border-border">
+            <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card/80 border border-primary/20 backdrop-blur-sm">
               <Target className="h-4 w-4 text-destructive" />
-              <span className="text-sm text-muted-foreground">Follow-ups esquecidos</span>
+              <span className="text-sm text-foreground/80">Follow-ups esquecidos</span>
             </div>
           </motion.div>
 
