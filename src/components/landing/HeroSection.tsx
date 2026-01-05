@@ -3,10 +3,18 @@ import { FloatingOrb, ParallaxBackground, FloatingParticles } from "@/components
 import { CTAButton } from "@/components/ui/cta-button";
 import { TypeWriterMulti } from "@/components/ui/typewriter";
 import { motion } from "framer-motion";
+import { InteractiveGrid } from "@/components/ui/interactive-grid";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+      {/* Interactive tech grid background */}
+      <InteractiveGrid 
+        gridSize={60} 
+        glowRadius={180}
+        className="z-0"
+      />
+      
       {/* Floating particles */}
       <FloatingParticles count={8} />
       
