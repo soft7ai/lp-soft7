@@ -1,4 +1,5 @@
-import { Brain, ShieldOff, Sparkles } from "lucide-react";
+import { ShieldOff, Sparkles } from "lucide-react";
+import logoWhite from "@/assets/logo-white.png";
 
 const Footer = () => {
   return (
@@ -7,10 +8,7 @@ const Footer = () => {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col items-center text-center">
             <div className="flex items-center gap-2 mb-6">
-              <Brain className="h-10 w-10 text-primary" />
-              <span className="text-2xl font-bold tracking-tight">
-                Soft7 <span className="text-primary">AI</span>
-              </span>
+              <img src={logoWhite} alt="Soft7 AI" className="h-10 w-auto" />
             </div>
 
             <div className="flex flex-wrap justify-center gap-6 mb-8">
