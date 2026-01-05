@@ -42,7 +42,7 @@ const ProblemSection = () => {
             <p className="text-xl font-semibold text-primary mb-6">
               👉 Isso não é falta de vendas. É venda perdida por abandono.
             </p>
-            <Button variant="outline" size="lg" className="group">
+            <Button variant="gradient" size="lg" className="group">
               Ver se existe vazamento no meu processo
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>

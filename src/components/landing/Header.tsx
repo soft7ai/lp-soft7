@@ -32,7 +32,7 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="default" size="sm" className="glow-sm">
+            <Button variant="gradient" size="sm" className="glow-sm">
               Agendar diagnóstico
             </Button>
           </div>
@@ -60,7 +60,7 @@ const Header = () => {
               <a href="#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 FAQ
               </a>
-              <Button variant="default" size="sm" className="w-full mt-2">
+              <Button variant="gradient" size="sm" className="w-full mt-2">
                 Agendar diagnóstico
               </Button>
             </nav>
