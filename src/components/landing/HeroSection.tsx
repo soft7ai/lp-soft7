@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle, Clock, Target } from "lucide-react";
 import { FloatingOrb, ParallaxBackground } from "@/components/ui/parallax";
+import { CTAButton } from "@/components/ui/cta-button";
 
 const HeroSection = () => {
   return (
@@ -54,10 +54,10 @@ const HeroSection = () => {
           </div>
 
           {/* CTA */}
-          <Button size="lg" className="glow text-lg px-8 py-6 h-auto group">
+          <CTAButton size="lg" className="text-lg px-8 py-6 h-auto group">
             🔍 Descobrir onde estou perdendo vendas hoje
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          </CTAButton>
         </div>
       </div>
 

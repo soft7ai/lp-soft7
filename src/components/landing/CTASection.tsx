@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Shield, Users } from "lucide-react";
 import { FloatingOrb, ParallaxBackground } from "@/components/ui/parallax";
+import { CTAButton } from "@/components/ui/cta-button";
 
 const CTASection = () => {
   return (
@@ -23,11 +23,11 @@ const CTASection = () => {
             E vazamentos não fecham sozinhos.
           </p>
 
-          <Button size="lg" className="glow text-lg px-10 py-7 h-auto group mb-8">
+          <CTAButton size="lg" className="text-lg px-10 py-7 h-auto group mb-8">
             <Calendar className="mr-2 h-5 w-5" />
             Agendar diagnóstico estratégico
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          </CTAButton>
 
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
