@@ -39,7 +39,7 @@ const FAQSection = () => {
                 <StaggerItem key={index}>
                   <AccordionItem
                     value={`item-${index}`}
-                    className="rounded-xl border border-border/50 bg-card px-6 data-[state=open]:border-primary/30"
+                    className="rounded-xl border border-border bg-card/80 px-6 data-[state=open]:border-primary/30 backdrop-blur-sm"
                   >
                     <AccordionTrigger className="text-left text-lg font-medium hover:no-underline hover:text-primary py-6">
                       {faq.question}

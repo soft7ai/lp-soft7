@@ -24,7 +24,7 @@ const InsightSection = () => {
             Enquanto você busca mais tráfego, o dinheiro que já estava na mesa escorre no silêncio.
           </p>
 
-          <div className="p-6 rounded-2xl card-gradient border border-border/50 max-w-xl mx-auto">
+          <div className="p-6 rounded-2xl bg-card/80 border border-border backdrop-blur-sm max-w-xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-3">
               <TrendingUp className="h-6 w-6 text-destructive" />
               <span className="text-lg font-semibold">Verdade incômoda</span>

@@ -26,7 +26,7 @@ const ProblemSection = () => {
           <StaggerContainer className="grid md:grid-cols-2 gap-4 mb-12" staggerDelay={0.1}>
             {problems.map((problem, index) => (
               <StaggerItem key={index}>
-                <div className="flex items-start gap-4 p-5 rounded-xl card-gradient border border-border/50 hover:border-primary/30 transition-all duration-300 group h-full">
+                <div className="flex items-start gap-4 p-5 rounded-xl bg-card/80 border border-border hover:border-destructive/30 transition-all duration-300 group h-full backdrop-blur-sm">
                   <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center">
                     <problem.icon className="h-5 w-5 text-destructive" />
                   </div>

@@ -31,7 +31,7 @@ const PromiseSection = () => {
             {promises.map((promise, index) => (
               <div
                 key={index}
-                className="p-6 rounded-2xl card-gradient border border-border/50 hover:border-primary/30 transition-all duration-300"
+                className="p-6 rounded-2xl bg-card/80 border border-border hover:border-primary/30 transition-all duration-300 backdrop-blur-sm"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mx-auto mb-4">
                   <promise.icon className="h-6 w-6 text-primary" />
