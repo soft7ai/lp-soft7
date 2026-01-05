@@ -11,6 +11,7 @@ import PromiseSection from "@/components/landing/PromiseSection";
 import CTASection from "@/components/landing/CTASection";
 import FAQSection from "@/components/landing/FAQSection";
 import Footer from "@/components/landing/Footer";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 const Index = () => {
   return (
@@ -18,16 +19,36 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <ProblemSection />
-        <InsightSection />
-        <SolutionSection />
-        <HowItWorksSection />
-        <ProofSection />
-        <TransformationSection />
-        <TargetSection />
-        <PromiseSection />
-        <CTASection />
-        <FAQSection />
+        <ScrollReveal>
+          <ProblemSection />
+        </ScrollReveal>
+        <ScrollReveal delay={0.1}>
+          <InsightSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <SolutionSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <HowItWorksSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <ProofSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <TransformationSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <TargetSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <PromiseSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <CTASection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <FAQSection />
+        </ScrollReveal>
       </main>
       <Footer />
     </div>
