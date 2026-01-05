@@ -104,7 +104,15 @@ const SolutionSection = () => {
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.5 }}
+                  animate={{
+                    y: [0, -10, 0],
+                    x: [0, 5, 0],
+                  }}
+                  transition={{
+                    y: { duration: 3, repeat: Infinity, ease: "easeInOut" },
+                    x: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+                    opacity: { delay: 0.5 },
+                  }}
                   className="absolute -left-4 sm:-left-8 md:-left-16 top-8 sm:top-12 md:top-20 z-20"
                 >
                   <div className="backdrop-blur-xl bg-card/40 border border-primary/30 rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl shadow-primary/10">
@@ -125,7 +133,15 @@ const SolutionSection = () => {
                 <motion.div
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.7 }}
+                  animate={{
+                    y: [0, 8, 0],
+                    x: [0, -6, 0],
+                  }}
+                  transition={{
+                    y: { duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 },
+                    x: { duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 },
+                    opacity: { delay: 0.7 },
+                  }}
                   className="absolute -right-4 sm:-right-8 md:-right-16 bottom-12 sm:bottom-16 md:bottom-24 z-20"
                 >
                   <div className="backdrop-blur-xl bg-card/40 border border-primary/30 rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl shadow-primary/10">
