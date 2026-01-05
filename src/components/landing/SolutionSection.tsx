@@ -1,4 +1,4 @@
-import { Brain, Zap, Bot, Database } from "lucide-react";
+import { Brain, Zap, Bot, Database, ArrowRight } from "lucide-react";
 import { FloatingOrb, FloatingParticles, ParallaxBackground } from "@/components/ui/parallax";
 
 const SolutionSection = () => {
@@ -29,8 +29,9 @@ const SolutionSection = () => {
               <span className="text-primary font-semibold">timing</span> e{" "}
               <span className="text-primary font-semibold">continuidade</span> — sempre.
             </p>
-            <p className="text-lg text-primary font-medium">
-              👉 É exatamente aqui que a Soft7 AI atua.
+            <p className="text-lg text-primary font-medium flex items-center justify-center gap-2">
+              <ArrowRight className="h-5 w-5" />
+              É exatamente aqui que a Soft7 AI atua.
             </p>
           </div>
 
