@@ -33,7 +33,7 @@ const SolutionSection = () => {
           </div>
 
           {/* What is Soft7 AI */}
-          <div className="rounded-3xl p-8 md:p-12 card-gradient border border-primary/20 glow relative overflow-hidden">
+          <div className="rounded-3xl p-8 md:p-12 bg-card/80 border border-primary/30 glow relative overflow-hidden backdrop-blur-sm">
             <FloatingOrb 
               className="bg-primary/10 -top-10 -right-10" 
               size="w-64 h-64"
@@ -52,15 +52,15 @@ const SolutionSection = () => {
               </div>
 
               <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="flex items-center gap-3 p-4 rounded-xl bg-background/50 border border-border/50">
+                <div className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border">
                   <Bot className="h-5 w-5 text-muted-foreground" />
                   <span className="text-muted-foreground line-through">Não é chatbot</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 rounded-xl bg-background/50 border border-border/50">
+                <div className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border">
                   <Database className="h-5 w-5 text-muted-foreground" />
                   <span className="text-muted-foreground line-through">Não é CRM</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 rounded-xl bg-background/50 border border-border/50">
+                <div className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border">
                   <Zap className="h-5 w-5 text-muted-foreground" />
                   <span className="text-muted-foreground line-through">Não é automação fria</span>
                 </div>

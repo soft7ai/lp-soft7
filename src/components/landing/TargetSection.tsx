@@ -22,7 +22,7 @@ const TargetSection = () => {
           <StaggerContainer className="space-y-4 mb-8" staggerDelay={0.1}>
             {forYou.map((item, index) => (
               <StaggerItem key={index}>
-                <div className="flex items-center gap-4 p-5 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-300">
+                <div className="flex items-center gap-4 p-5 rounded-xl bg-card/80 border border-border hover:border-primary/30 transition-all duration-300 backdrop-blur-sm">
                   <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                     <Check className="h-4 w-4 text-primary" />
                   </div>

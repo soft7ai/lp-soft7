@@ -68,7 +68,7 @@ const TransformationSection = () => {
             </div>
 
             {/* After */}
-            <div className="p-8 rounded-2xl card-gradient border border-primary/30 glow-sm">
+            <div className="p-8 rounded-2xl bg-card/80 border border-primary/30 glow-sm backdrop-blur-sm">
               <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
                 <span className="text-primary">Depois</span>
               </h3>

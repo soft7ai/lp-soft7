@@ -23,7 +23,7 @@ const ProofSection = () => {
           <StaggerContainer className="grid sm:grid-cols-2 gap-4 mb-12" staggerDelay={0.1}>
             {proofs.map((proof, index) => (
               <StaggerItem key={index}>
-                <div className="flex items-center gap-4 p-5 rounded-xl bg-card border border-border/50 h-full">
+                <div className="flex items-center gap-4 p-5 rounded-xl bg-card/80 border border-border backdrop-blur-sm h-full">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                     <proof.icon className="h-5 w-5 text-primary" />
                   </div>

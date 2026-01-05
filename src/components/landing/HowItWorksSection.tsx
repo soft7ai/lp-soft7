@@ -35,7 +35,7 @@ const HowItWorksSection = () => {
           <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12" staggerDelay={0.08}>
             {features.map((feature, index) => (
               <StaggerItem key={index}>
-                <div className="group p-6 rounded-xl card-gradient border border-border/50 hover:border-primary/50 transition-all duration-300 hover:glow-sm h-full">
+                <div className="group p-6 rounded-xl bg-card/80 border border-border hover:border-primary/50 transition-all duration-300 hover:glow-sm h-full backdrop-blur-sm">
                   <div className="flex items-center gap-4">
                     <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
                       <feature.icon className="h-5 w-5 text-primary" />
