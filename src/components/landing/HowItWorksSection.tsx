@@ -1,4 +1,4 @@
-import { Check, Zap, Target, RefreshCw, Flame, UserCheck, ClipboardCheck } from "lucide-react";
+import { Check, Zap, Target, RefreshCw, Flame, UserCheck, ClipboardCheck, ArrowRight } from "lucide-react";
 import { StaggerContainer, StaggerItem } from "@/components/ui/scroll-reveal";
 import { FloatingOrb, ParallaxBackground } from "@/components/ui/parallax";
 
@@ -51,8 +51,9 @@ const HowItWorksSection = () => {
           </StaggerContainer>
 
           <div className="text-center">
-            <p className="text-lg text-primary font-medium">
-              👉 Menos improviso. Mais controle.
+            <p className="text-lg text-primary font-medium flex items-center justify-center gap-2">
+              <ArrowRight className="h-5 w-5" />
+              Menos improviso. Mais controle.
             </p>
           </div>
         </div>

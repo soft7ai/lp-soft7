@@ -1,4 +1,4 @@
-import { ArrowRight, MessageCircle, Clock, Target } from "lucide-react";
+import { ArrowRight, MessageCircle, Clock, Target, Search } from "lucide-react";
 import { FloatingOrb, ParallaxBackground, FloatingParticles } from "@/components/ui/parallax";
 import { CTAButton } from "@/components/ui/cta-button";
 import { TypeWriterMulti } from "@/components/ui/typewriter";
@@ -99,7 +99,8 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 3.6 }}
           >
             <CTAButton size="lg" className="text-lg px-8 py-6 h-auto group">
-              🔍 Descobrir onde estou perdendo vendas hoje
+              <Search className="mr-2 h-5 w-5" />
+              Descobrir onde estou perdendo vendas hoje
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </CTAButton>
           </motion.div>
