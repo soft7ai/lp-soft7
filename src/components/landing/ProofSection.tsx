@@ -1,4 +1,4 @@
-import { Clock, RotateCcw, Trophy, TrendingDown } from "lucide-react";
+import { Clock, RotateCcw, Trophy, TrendingDown, ArrowRight } from "lucide-react";
 import { StaggerContainer, StaggerItem } from "@/components/ui/scroll-reveal";
 
 const proofs = [
@@ -34,8 +34,9 @@ const ProofSection = () => {
           </StaggerContainer>
 
           <div className="text-center p-6 rounded-2xl border border-primary/30 bg-primary/5">
-            <p className="text-lg font-semibold">
-              👉 O mercado mudou. A maioria das empresas{" "}
+            <p className="text-lg font-semibold flex items-center justify-center gap-2">
+              <ArrowRight className="h-5 w-5 text-primary" />
+              O mercado mudou. A maioria das empresas{" "}
               <span className="text-destructive">não</span>.
             </p>
           </div>

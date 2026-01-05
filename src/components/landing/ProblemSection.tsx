@@ -39,8 +39,9 @@ const ProblemSection = () => {
           </StaggerContainer>
 
           <div className="text-center">
-            <p className="text-xl font-semibold text-primary mb-6">
-              👉 Isso não é falta de vendas. É venda perdida por abandono.
+            <p className="text-xl font-semibold text-primary mb-6 flex items-center justify-center gap-2">
+              <ArrowRight className="h-5 w-5" />
+              Isso não é falta de vendas. É venda perdida por abandono.
             </p>
             <Button variant="gradient" size="lg" className="group">
               Ver se existe vazamento no meu processo
