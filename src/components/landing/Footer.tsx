@@ -1,4 +1,5 @@
 import { ShieldOff, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import logoWhite from "@/assets/logo-white.png";
 
 const Footer = () => {
@@ -22,9 +23,13 @@ const Footer = () => {
               </div>
             </div>
 
-            <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Soft7 AI. Todos os direitos reservados.
-            </p>
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
+              <span>© {new Date().getFullYear()} Soft7 AI. Todos os direitos reservados.</span>
+              <span className="hidden sm:inline">•</span>
+              <Link to="/privacidade" className="hover:text-primary transition-colors">
+                Política de Privacidade
+              </Link>
+            </div>
           </div>
         </div>
       </div>
