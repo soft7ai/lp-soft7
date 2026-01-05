@@ -14,7 +14,6 @@ const ProofSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-sm text-primary font-medium mb-4">PROVA DE REALIDADE</p>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Isso não é opinião. É padrão de mercado.
             </h2>
