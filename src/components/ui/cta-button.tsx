@@ -53,11 +53,12 @@ const CTAButton = React.forwardRef<HTMLButtonElement, CTAButtonProps>(
         {/* Button with shimmer effect */}
         <Button
           ref={ref}
+          variant="gradient"
           className={cn(
             "relative overflow-hidden",
-            "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent",
+            "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/25 before:to-transparent",
             "before:translate-x-[-200%] hover:before:translate-x-[200%] before:transition-transform before:duration-700",
-            "shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/40",
+            "shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50",
             "transition-shadow duration-300",
             className
           )}
