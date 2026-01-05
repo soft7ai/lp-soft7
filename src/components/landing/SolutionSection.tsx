@@ -1,6 +1,7 @@
-import { Brain, Zap, Bot, Database, ArrowRight } from "lucide-react";
+import { Brain, Zap, Bot, Database, ArrowRight, TrendingUp, Users } from "lucide-react";
 import { FloatingOrb, FloatingParticles, ParallaxBackground, Parallax } from "@/components/ui/parallax";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
+import { motion } from "framer-motion";
 import dashboardPreview from "@/assets/dashboard-preview.png";
 
 const SolutionSection = () => {
@@ -84,10 +85,62 @@ const SolutionSection = () => {
             </div>
           </div>
 
-          {/* iPad Preview with Parallax Animation */}
+          {/* iPad Preview with Floating Animation and Glass Cards */}
           <ScrollReveal delay={0.2} className="mt-16">
             <div className="relative flex justify-center px-2 sm:px-0">
-              <Parallax speed={0.3} direction="up" className="w-full max-w-4xl">
+              {/* Floating iPad */}
+              <motion.div
+                animate={{
+                  y: [0, -15, 0],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="w-full max-w-4xl relative"
+              >
+                {/* Glass Card - Left Top */}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.5 }}
+                  className="absolute -left-4 sm:-left-8 md:-left-16 top-8 sm:top-12 md:top-20 z-20"
+                >
+                  <div className="backdrop-blur-xl bg-card/40 border border-primary/30 rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl shadow-primary/10">
+                    <div className="flex items-center gap-2 sm:gap-3">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-primary/20 flex items-center justify-center">
+                        <TrendingUp className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+                      </div>
+                      <div>
+                        <p className="text-xs sm:text-sm text-muted-foreground">Aumento de</p>
+                        <p className="text-lg sm:text-xl md:text-2xl font-bold text-primary">+30%</p>
+                        <p className="text-xs sm:text-sm text-foreground/80">nos fechamentos</p>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Glass Card - Right Bottom */}
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.7 }}
+                  className="absolute -right-4 sm:-right-8 md:-right-16 bottom-12 sm:bottom-16 md:bottom-24 z-20"
+                >
+                  <div className="backdrop-blur-xl bg-card/40 border border-primary/30 rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-xl shadow-primary/10">
+                    <div className="flex items-center gap-2 sm:gap-3">
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-primary/20 flex items-center justify-center">
+                        <Users className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
+                      </div>
+                      <div>
+                        <p className="text-lg sm:text-xl md:text-2xl font-bold text-primary">300+</p>
+                        <p className="text-xs sm:text-sm text-foreground/80">leads qualificados</p>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+
                 {/* iPad Frame */}
                 <div className="relative mx-auto">
                   {/* iPad Outer Frame */}
@@ -113,7 +166,7 @@ const SolutionSection = () => {
                   {/* Glow Effect */}
                   <div className="absolute -inset-2 sm:-inset-4 bg-primary/20 blur-2xl sm:blur-3xl rounded-full -z-10 opacity-60" />
                 </div>
-              </Parallax>
+              </motion.div>
             </div>
           </ScrollReveal>
 
