@@ -1,5 +1,6 @@
 import { X, Check, ArrowRight } from "lucide-react";
 import { StaggerContainer, StaggerItem } from "@/components/ui/scroll-reveal";
+import { FloatingOrb, ParallaxBackground } from "@/components/ui/parallax";
 
 const beforeItems = [
   "Vendas morrem em silêncio",
@@ -18,7 +19,17 @@ const afterItems = [
 const TransformationSection = () => {
   return (
     <section className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 radial-gradient opacity-30" />
+      <ParallaxBackground className="radial-gradient opacity-30" speed={0.1} />
+      <FloatingOrb 
+        className="bg-primary/5 -top-20 left-1/4" 
+        size="w-80 h-80"
+        speed={0.3}
+      />
+      <FloatingOrb 
+        className="bg-destructive/5 bottom-0 right-1/4" 
+        size="w-64 h-64"
+        speed={0.4}
+      />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">

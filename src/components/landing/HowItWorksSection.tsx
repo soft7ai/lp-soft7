@@ -1,5 +1,6 @@
 import { Check, Zap, Target, RefreshCw, Flame, UserCheck, ClipboardCheck } from "lucide-react";
 import { StaggerContainer, StaggerItem } from "@/components/ui/scroll-reveal";
+import { FloatingOrb, ParallaxBackground } from "@/components/ui/parallax";
 
 const features = [
   { icon: Zap, text: "Responde em segundos" },
@@ -12,8 +13,13 @@ const features = [
 
 const HowItWorksSection = () => {
   return (
-    <section id="como-funciona" className="py-24 relative">
-      <div className="absolute inset-0 radial-gradient" />
+    <section id="como-funciona" className="py-24 relative overflow-hidden">
+      <ParallaxBackground className="radial-gradient" speed={0.15} />
+      <FloatingOrb 
+        className="bg-primary/5 top-0 right-0" 
+        size="w-72 h-72"
+        speed={0.35}
+      />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">

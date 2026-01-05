@@ -1,13 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle, Clock, Target } from "lucide-react";
+import { FloatingOrb, ParallaxBackground } from "@/components/ui/parallax";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
-      {/* Background effects */}
-      <div className="absolute inset-0 radial-gradient" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary/3 rounded-full blur-3xl animate-pulse delay-1000" />
+      {/* Background effects with parallax */}
+      <ParallaxBackground className="radial-gradient" />
+      <FloatingOrb 
+        className="bg-primary/10 top-1/4 left-1/4" 
+        size="w-96 h-96"
+        speed={0.3}
+      />
+      <FloatingOrb 
+        className="bg-primary/5 bottom-1/4 right-1/4" 
+        size="w-80 h-80"
+        speed={0.5}
+      />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
