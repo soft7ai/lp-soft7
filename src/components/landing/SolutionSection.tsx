@@ -86,19 +86,19 @@ const SolutionSection = () => {
 
           {/* iPad Preview with Parallax Animation */}
           <ScrollReveal delay={0.2} className="mt-16">
-            <div className="relative flex justify-center">
+            <div className="relative flex justify-center px-2 sm:px-0">
               <Parallax speed={0.3} direction="up" className="w-full max-w-4xl">
                 {/* iPad Frame */}
                 <div className="relative mx-auto">
                   {/* iPad Outer Frame */}
-                  <div className="relative bg-gradient-to-b from-zinc-800 to-zinc-900 rounded-[2.5rem] p-3 shadow-2xl shadow-primary/20">
+                  <div className="relative bg-gradient-to-b from-zinc-800 to-zinc-900 rounded-[1rem] sm:rounded-[1.5rem] md:rounded-[2.5rem] p-1.5 sm:p-2 md:p-3 shadow-2xl shadow-primary/20">
                     {/* iPad Bezel */}
-                    <div className="relative bg-black rounded-[2rem] p-2 overflow-hidden">
+                    <div className="relative bg-black rounded-[0.75rem] sm:rounded-[1rem] md:rounded-[2rem] p-1 sm:p-1.5 md:p-2 overflow-hidden">
                       {/* Camera */}
-                      <div className="absolute top-4 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-zinc-700 z-10" />
+                      <div className="absolute top-2 sm:top-3 md:top-4 left-1/2 -translate-x-1/2 w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-zinc-700 z-10" />
                       
                       {/* Screen */}
-                      <div className="relative rounded-[1.5rem] overflow-hidden">
+                      <div className="relative rounded-[0.5rem] sm:rounded-[1rem] md:rounded-[1.5rem] overflow-hidden">
                         <img 
                           src={dashboardPreview} 
                           alt="Soft7 AI Dashboard - Visão geral do sistema de vendas"
@@ -111,7 +111,7 @@ const SolutionSection = () => {
                   </div>
                   
                   {/* Glow Effect */}
-                  <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full -z-10 opacity-60" />
+                  <div className="absolute -inset-2 sm:-inset-4 bg-primary/20 blur-2xl sm:blur-3xl rounded-full -z-10 opacity-60" />
                 </div>
               </Parallax>
             </div>
