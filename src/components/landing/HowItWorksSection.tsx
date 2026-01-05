@@ -1,4 +1,5 @@
 import { Check, Zap, Target, RefreshCw, Flame, UserCheck, ClipboardCheck } from "lucide-react";
+import { StaggerContainer, StaggerItem } from "@/components/ui/scroll-reveal";
 
 const features = [
   { icon: Zap, text: "Responde em segundos" },
@@ -25,24 +26,23 @@ const HowItWorksSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12" staggerDelay={0.08}>
             {features.map((feature, index) => (
-              <div
-                key={index}
-                className="group p-6 rounded-xl card-gradient border border-border/50 hover:border-primary/50 transition-all duration-300 hover:glow-sm"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-                    <feature.icon className="h-5 w-5 text-primary" />
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-primary" />
-                    <span className="font-medium">{feature.text}</span>
+              <StaggerItem key={index}>
+                <div className="group p-6 rounded-xl card-gradient border border-border/50 hover:border-primary/50 transition-all duration-300 hover:glow-sm h-full">
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                      <feature.icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-primary" />
+                      <span className="font-medium">{feature.text}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerContainer>
 
           <div className="text-center">
             <p className="text-lg text-primary font-medium">

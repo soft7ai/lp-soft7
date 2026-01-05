@@ -1,4 +1,5 @@
 import { X, Check, ArrowRight } from "lucide-react";
+import { StaggerContainer, StaggerItem } from "@/components/ui/scroll-reveal";
 
 const beforeItems = [
   "Vendas morrem em silêncio",
@@ -41,16 +42,18 @@ const TransformationSection = () => {
               <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
                 <span className="text-destructive">Antes</span>
               </h3>
-              <div className="space-y-4">
+              <StaggerContainer className="space-y-4" staggerDelay={0.1}>
                 {beforeItems.map((item, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0">
-                      <X className="h-4 w-4 text-destructive" />
+                  <StaggerItem key={index}>
+                    <div className="flex items-center gap-3">
+                      <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0">
+                        <X className="h-4 w-4 text-destructive" />
+                      </div>
+                      <span className="text-muted-foreground">{item}</span>
                     </div>
-                    <span className="text-muted-foreground">{item}</span>
-                  </div>
+                  </StaggerItem>
                 ))}
-              </div>
+              </StaggerContainer>
             </div>
 
             {/* After */}
@@ -58,16 +61,18 @@ const TransformationSection = () => {
               <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
                 <span className="text-primary">Depois</span>
               </h3>
-              <div className="space-y-4">
+              <StaggerContainer className="space-y-4" staggerDelay={0.1}>
                 {afterItems.map((item, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                      <Check className="h-4 w-4 text-primary" />
+                  <StaggerItem key={index}>
+                    <div className="flex items-center gap-3">
+                      <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                        <Check className="h-4 w-4 text-primary" />
+                      </div>
+                      <span className="text-foreground">{item}</span>
                     </div>
-                    <span className="text-foreground">{item}</span>
-                  </div>
+                  </StaggerItem>
                 ))}
-              </div>
+              </StaggerContainer>
             </div>
           </div>
         </div>
