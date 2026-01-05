@@ -1,5 +1,7 @@
 import { Brain, Zap, Bot, Database, ArrowRight } from "lucide-react";
-import { FloatingOrb, FloatingParticles, ParallaxBackground } from "@/components/ui/parallax";
+import { FloatingOrb, FloatingParticles, ParallaxBackground, Parallax } from "@/components/ui/parallax";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
+import dashboardPreview from "@/assets/dashboard-preview.png";
 
 const SolutionSection = () => {
   return (
@@ -82,8 +84,41 @@ const SolutionSection = () => {
             </div>
           </div>
 
+          {/* iPad Preview with Parallax Animation */}
+          <ScrollReveal delay={0.2} className="mt-16">
+            <div className="relative flex justify-center">
+              <Parallax speed={0.3} direction="up" className="w-full max-w-4xl">
+                {/* iPad Frame */}
+                <div className="relative mx-auto">
+                  {/* iPad Outer Frame */}
+                  <div className="relative bg-gradient-to-b from-zinc-800 to-zinc-900 rounded-[2.5rem] p-3 shadow-2xl shadow-primary/20">
+                    {/* iPad Bezel */}
+                    <div className="relative bg-black rounded-[2rem] p-2 overflow-hidden">
+                      {/* Camera */}
+                      <div className="absolute top-4 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-zinc-700 z-10" />
+                      
+                      {/* Screen */}
+                      <div className="relative rounded-[1.5rem] overflow-hidden aspect-[4/3]">
+                        <img 
+                          src={dashboardPreview} 
+                          alt="Soft7 AI Dashboard - Visão geral do sistema de vendas"
+                          className="w-full h-full object-cover object-top"
+                        />
+                        {/* Screen Glare Effect */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent pointer-events-none" />
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Glow Effect */}
+                  <div className="absolute -inset-4 bg-primary/20 blur-3xl rounded-full -z-10 opacity-60" />
+                </div>
+              </Parallax>
+            </div>
+          </ScrollReveal>
+
           {/* Control message */}
-          <div className="mt-12 text-center p-8 rounded-2xl border border-destructive/30 bg-destructive/5">
+          <div className="mt-16 text-center p-8 rounded-2xl border border-destructive/30 bg-destructive/5">
             <h4 className="text-xl md:text-2xl font-bold mb-2">
               Se você não enxerga, você não controla.
             </h4>
