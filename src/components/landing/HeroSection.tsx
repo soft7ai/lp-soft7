@@ -97,11 +97,12 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 3.6 }}
+            className="flex justify-center px-2"
           >
-            <CTAButton size="lg" className="text-lg px-8 py-6 h-auto group">
-              <Search className="mr-2 h-5 w-5" />
-              Descobrir onde estou perdendo vendas hoje
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <CTAButton size="lg" className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 h-auto group w-full sm:w-auto max-w-full text-center">
+              <Search className="mr-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+              <span className="whitespace-normal sm:whitespace-nowrap">Descobrir onde estou perdendo vendas hoje</span>
+              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </CTAButton>
           </motion.div>
         </div>
