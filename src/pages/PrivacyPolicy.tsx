@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
             {/* Introduction */}
             <section className="p-6 rounded-2xl bg-card border border-border">
               <p className="text-muted-foreground leading-relaxed">
-                A Soft7 AI está comprometida em proteger a privacidade dos usuários. 
+                A SoftSales está comprometida em proteger a privacidade dos usuários. 
                 Esta Política de Privacidade descreve como coletamos, usamos, armazenamos 
                 e protegemos suas informações pessoais quando você utiliza nosso site e serviços.
               </p>
@@ -208,10 +208,10 @@ const PrivacyPolicy = () => {
                   Para exercer seus direitos ou esclarecer dúvidas sobre esta política, 
                   entre em contato conosco através do e-mail:{" "}
                   <a 
-                    href="mailto:privacidade@soft7.ai" 
+                    href="mailto:contato@softsales.com.br" 
                     className="text-primary hover:underline"
                   >
-                    privacidade@soft7.ai
+                    contato@softsales.com.br
                   </a>
                 </p>
               </div>

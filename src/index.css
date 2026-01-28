@@ -6,7 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Soft7 AI - Design System */
+/* SoftSales - Design System */
 
 @layer base {
   :root {
@@ -19,8 +19,8 @@
     --popover: 0 0% 89%;
     --popover-foreground: 0 0% 9%;
 
-    --primary: 243 75% 58%;
-    --primary-foreground: 225 100% 96%;
+    --primary: 204 93% 37%;
+    --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 32%;
     --secondary-foreground: 0 0% 98%;
@@ -28,43 +28,43 @@
     --muted: 0 0% 63%;
     --muted-foreground: 0 0% 9%;
 
-    --accent: 250 100% 97%;
-    --accent-foreground: 258 89% 66%;
+    --accent: 204 60% 57%;
+    --accent-foreground: 216 81% 7%;
 
     --destructive: 0 72% 50%;
     --destructive-foreground: 0 85% 97%;
 
     --border: 0 0% 83%;
     --input: 0 0% 83%;
-    --ring: 243 75% 58%;
+    --ring: 204 60% 57%;
 
     --radius: 1.25rem;
 
-    --sidebar-background: 220 18% 8%;
-    --sidebar-foreground: 0 0% 9%;
-    --sidebar-primary: 243 75% 58%;
-    --sidebar-primary-foreground: 225 100% 96%;
-    --sidebar-accent: 0 0% 32%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 0 0% 83%;
-    --sidebar-ring: 243 75% 58%;
+    --sidebar-background: 216 81% 7%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 204 93% 37%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 204 60% 57%;
+    --sidebar-accent-foreground: 216 81% 7%;
+    --sidebar-border: 216 50% 20%;
+    --sidebar-ring: 204 60% 57%;
 
-    --chart-1: 234 89% 73%;
-    --chart-2: 255 91% 76%;
-    --chart-3: 270 95% 75%;
-    --chart-4: 238 83% 66%;
-    --chart-5: 0 0% 45%;
+    --chart-1: 204 93% 37%;
+    --chart-2: 204 60% 57%;
+    --chart-3: 216 93% 39%;
+    --chart-4: 216 81% 25%;
+    --chart-5: 216 50% 40%;
 
     --font-sans: 'Lato', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
 
-    --shadow-glow: 0 0 60px hsl(174 72% 50% / 0.15);
-    --shadow-glow-sm: 0 0 30px hsl(174 72% 50% / 0.1);
+    --shadow-glow: 0 0 60px hsl(204 93% 37% / 0.15);
+    --shadow-glow-sm: 0 0 30px hsl(204 93% 37% / 0.1);
     --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
 
-    --gradient-primary: linear-gradient(135deg, hsl(174 72% 50%) 0%, hsl(190 70% 45%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(220 20% 6%) 0%, hsl(220 18% 10%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(220 18% 12%) 0%, hsl(220 18% 8%) 100%);
-    --gradient-radial: radial-gradient(ellipse at center top, hsl(174 72% 50% / 0.08) 0%, transparent 60%);
+    --gradient-primary: linear-gradient(135deg, hsl(216 93% 39%) 0%, hsl(204 60% 57%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(216 81% 7%) 0%, hsl(216 70% 12%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(216 70% 12%) 0%, hsl(216 81% 7%) 100%);
+    --gradient-radial: radial-gradient(ellipse at center top, hsl(204 93% 37% / 0.08) 0%, transparent 60%);
     --sidebar: 0 0% 98%;
     --font-serif: 'EB Garamond', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
     --font-mono: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
@@ -80,39 +80,39 @@
   }
 
   .dark {
-    --background: 220 20% 6%;
+    --background: 216 81% 7%;
     --foreground: 0 0% 98%;
-    --card: 220 18% 12%;
+    --card: 216 70% 12%;
     --card-foreground: 0 0% 98%;
-    --popover: 220 18% 15%;
+    --popover: 216 60% 15%;
     --popover-foreground: 0 0% 98%;
-    --primary: 250 100% 70%;
-    --primary-foreground: 250 100% 10%;
-    --secondary: 220 15% 25%;
+    --primary: 204 93% 37%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 216 50% 20%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 220 15% 35%;
-    --muted-foreground: 220 10% 70%;
-    --accent: 280 100% 65%;
-    --accent-foreground: 280 100% 95%;
+    --muted: 216 40% 25%;
+    --muted-foreground: 204 30% 70%;
+    --accent: 204 60% 57%;
+    --accent-foreground: 216 81% 7%;
     --destructive: 0 90% 60%;
     --destructive-foreground: 0 85% 97%;
-    --border: 220 15% 25%;
-    --input: 220 15% 25%;
-    --ring: 250 100% 70%;
-    --sidebar-background: 220 18% 8%;
+    --border: 216 50% 20%;
+    --input: 216 50% 20%;
+    --ring: 204 60% 57%;
+    --sidebar-background: 216 81% 7%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 250 100% 70%;
-    --sidebar-primary-foreground: 250 100% 10%;
-    --sidebar-accent: 280 100% 65%;
-    --sidebar-accent-foreground: 280 100% 95%;
-    --sidebar-border: 220 15% 25%;
-    --sidebar-ring: 250 100% 70%;
-    --chart-1: 250 100% 75%;
-    --chart-2: 280 100% 75%;
-    --chart-3: 320 100% 70%;
-    --chart-4: 200 100% 65%;
-    --chart-5: 160 100% 50%;
-    --sidebar: 220 18% 12%;
+    --sidebar-primary: 204 93% 37%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 204 60% 57%;
+    --sidebar-accent-foreground: 216 81% 7%;
+    --sidebar-border: 216 50% 20%;
+    --sidebar-ring: 204 60% 57%;
+    --chart-1: 204 93% 37%;
+    --chart-2: 204 60% 57%;
+    --chart-3: 216 93% 39%;
+    --chart-4: 216 81% 25%;
+    --chart-5: 216 50% 40%;
+    --sidebar: 216 70% 12%;
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
     --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
@@ -122,10 +122,10 @@
     --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
     --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
     
-    --gradient-primary: linear-gradient(135deg, hsl(250 100% 70%) 0%, hsl(220 100% 60%) 50%, hsl(200 100% 55%) 100%);
-    --gradient-button: linear-gradient(135deg, hsl(250 100% 65%) 0%, hsl(200 100% 55%) 100%);
-    --shadow-glow: 0 0 60px hsl(220 100% 60% / 0.25);
-    --shadow-glow-sm: 0 0 30px hsl(220 100% 60% / 0.15);
+    --gradient-primary: linear-gradient(135deg, hsl(216 93% 39%) 0%, hsl(204 60% 57%) 100%);
+    --gradient-button: linear-gradient(135deg, hsl(204 93% 37%) 0%, hsl(204 60% 57%) 100%);
+    --shadow-glow: 0 0 60px hsl(204 93% 37% / 0.25);
+    --shadow-glow-sm: 0 0 30px hsl(204 93% 37% / 0.15);
   }
 }
 
@@ -145,7 +145,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-[hsl(250_100%_70%)] via-[hsl(220_100%_60%)] to-[hsl(200_100%_55%)] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[hsl(216_93%_39%)] via-[hsl(204_93%_37%)] to-[hsl(204_60%_57%)] bg-clip-text text-transparent;
   }
 
   .bg-gradient-button {

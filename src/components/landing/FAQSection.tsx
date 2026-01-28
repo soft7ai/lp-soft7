@@ -9,7 +9,7 @@ import { StaggerContainer, StaggerItem } from "@/components/ui/scroll-reveal";
 const faqs = [
   {
     question: "Isso substitui meu time?",
-    answer: "Não. Liberta o time para fechar. A Soft7 AI cuida de toda a parte operacional — resposta, qualificação, follow-up — e seu time entra só quando o lead está pronto para comprar.",
+    answer: "Não. Liberta o time para fechar. A SoftSales cuida de toda a parte operacional — resposta, qualificação, follow-up — e seu time entra só quando o lead está pronto para comprar.",
   },
   {
     question: "É só um software?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "Funciona para qualquer empresa?",
-    answer: "Não. Apenas para quem já tem demanda. Se você não gera leads hoje, primeiro precisa resolver isso. A Soft7 AI é para empresas que já têm oportunidades chegando e estão perdendo por falta de processo.",
+    answer: "Não. Apenas para quem já tem demanda. Se você não gera leads hoje, primeiro precisa resolver isso. A SoftSales é para empresas que já têm oportunidades chegando e estão perdendo por falta de processo.",
   },
 ];
 

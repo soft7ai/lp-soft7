@@ -14,7 +14,7 @@ const PromiseSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            A Soft7 AI não promete vender mais.
+            A SoftSales não promete vender mais.
           </h2>
           
           <p className="text-xl text-muted-foreground mb-4">
