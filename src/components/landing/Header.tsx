@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logoWhite from "@/assets/logo-white.png";
+import logoSoftSales from "@/assets/logo-softsales.png";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <a href="#" className="flex items-center gap-2">
-            <img src={logoWhite} alt="SoftSales" className="h-8 w-auto" />
+            <img src={logoSoftSales} alt="SoftSales" className="h-8 w-auto" />
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
