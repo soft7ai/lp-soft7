@@ -20,7 +20,7 @@ const CTAButton = React.forwardRef<HTMLButtonElement, CTAButtonProps>(
         {/* Animated glow rings */}
         <motion.div
           className={cn(
-            "absolute inset-0 rounded-md bg-primary/30 blur-md",
+            "absolute inset-0 rounded-md bg-[hsl(204_93%_37%)]/30 blur-md",
             "pointer-events-none"
           )}
           animate={{
@@ -35,7 +35,7 @@ const CTAButton = React.forwardRef<HTMLButtonElement, CTAButtonProps>(
         />
         <motion.div
           className={cn(
-            "absolute inset-0 rounded-md bg-primary/20 blur-xl",
+            "absolute inset-0 rounded-md bg-[hsl(204_60%_57%)]/20 blur-xl",
             "pointer-events-none"
           )}
           animate={{
@@ -58,7 +58,7 @@ const CTAButton = React.forwardRef<HTMLButtonElement, CTAButtonProps>(
             "relative overflow-hidden",
             "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/25 before:to-transparent",
             "before:translate-x-[-200%] hover:before:translate-x-[200%] before:transition-transform before:duration-700",
-            "shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50",
+            "shadow-lg shadow-[hsl(204_93%_37%)]/30 hover:shadow-xl hover:shadow-[hsl(204_93%_37%)]/50",
             "transition-shadow duration-300",
             className
           )}

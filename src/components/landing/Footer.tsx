@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col items-center text-center">
             <div className="flex items-center gap-2 mb-6">
-              <img src={logoWhite} alt="Soft7 AI" className="h-10 w-auto" />
+              <img src={logoWhite} alt="SoftSales" className="h-10 w-auto" />
             </div>
 
             <div className="flex flex-wrap justify-center gap-6 mb-8">
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
-              <span>© {new Date().getFullYear()} Soft7 AI. Todos os direitos reservados.</span>
+              <span>© {new Date().getFullYear()} SoftSales. Todos os direitos reservados.</span>
               <span className="hidden sm:inline">•</span>
               <Link to="/privacidade" className="hover:text-primary transition-colors">
                 Política de Privacidade

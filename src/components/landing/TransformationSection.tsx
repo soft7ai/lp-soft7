@@ -36,7 +36,7 @@ const TransformationSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Veja a diferença que a Soft7 AI faz no seu comercial
+              Veja a diferença que a SoftSales faz no seu comercial
             </h2>
           </div>
 

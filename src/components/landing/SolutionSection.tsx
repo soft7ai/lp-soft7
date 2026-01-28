@@ -34,7 +34,7 @@ const SolutionSection = () => {
             </p>
             <p className="text-lg text-primary font-medium flex items-center justify-center gap-2">
               <ArrowRight className="h-5 w-5" />
-              É exatamente aqui que a Soft7 AI atua.
+              É exatamente aqui que a SoftSales atua.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ const SolutionSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">O que é</p>
-                  <h3 className="text-2xl font-bold">Soft7 AI</h3>
+                  <h3 className="text-2xl font-bold">SoftSales</h3>
                 </div>
               </div>
 
@@ -74,7 +74,7 @@ const SolutionSection = () => {
 
               <div className="text-center">
                 <h4 className="text-2xl md:text-3xl font-bold mb-4">
-                  A Soft7 AI é o{" "}
+                  A SoftSales é o{" "}
                   <span className="text-gradient">sistema nervoso do seu comercial.</span>
                 </h4>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -170,7 +170,7 @@ const SolutionSection = () => {
                       <div className="relative rounded-[0.5rem] sm:rounded-[1rem] md:rounded-[1.5rem] overflow-hidden">
                         <img 
                           src={dashboardPreview} 
-                          alt="Soft7 AI Dashboard - Visão geral do sistema de vendas"
+                          alt="SoftSales Dashboard - Visão geral do sistema de vendas"
                           className="w-full h-auto"
                         />
                         {/* Screen Glare Effect */}
