@@ -30,7 +30,7 @@ const CTASection = () => {
           </p>
 
           <CTAButton size="lg" className="text-lg px-10 py-7 h-auto group mb-8" asChild>
-            <a href="https://wa.me/5534984312469?text=_Ol%C3%A1!%20vim%20do%20Instagram%20e%20quero%20saber%20mais%20sobre..._" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5534984312469?text=_Ol%C3%A1!%20vim%20do%20Instagram%20e%20quero%20meu%20diagn%C3%B3stico..._" target="_blank" rel="noopener noreferrer">
               <Calendar className="mr-2 h-5 w-5" />
               Agendar diagnóstico estratégico
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

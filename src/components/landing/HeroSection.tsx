@@ -100,7 +100,7 @@ const HeroSection = () => {
             className="flex justify-center px-2"
           >
             <CTAButton size="lg" className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 h-auto group w-full sm:w-auto max-w-full text-center" asChild>
-              <a href="https://wa.me/5534984312469?text=_Ol%C3%A1!%20vim%20do%20Instagram%20e%20quero%20saber%20mais%20sobre..._" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5534984312469?text=_Ol%C3%A1!%20vim%20do%20Instagram%20e%20quero%20meu%20diagn%C3%B3stico..._" target="_blank" rel="noopener noreferrer">
                 <Search className="mr-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                 <span className="whitespace-normal sm:whitespace-nowrap">Descobrir onde estou perdendo vendas hoje</span>
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform flex-shrink-0" />
