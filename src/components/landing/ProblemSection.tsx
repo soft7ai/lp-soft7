@@ -43,9 +43,11 @@ const ProblemSection = () => {
               <ArrowRight className="h-5 w-5" />
               Isso não é falta de vendas. É venda perdida por abandono.
             </p>
-            <Button variant="gradient" size="lg" className="group">
-              Ver se existe vazamento no meu processo
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            <Button variant="gradient" size="lg" className="group" asChild>
+              <a href="https://wa.me/5534984312469?text=_Ol%C3%A1!%20vim%20do%20Instagram%20e%20quero%20saber%20mais%20sobre..._" target="_blank" rel="noopener noreferrer">
+                Ver se existe vazamento no meu processo
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </div>
         </div>

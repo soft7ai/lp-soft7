@@ -30,8 +30,10 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="gradient" size="sm" className="glow-sm">
-              Agendar diagnóstico
+            <Button variant="gradient" size="sm" className="glow-sm" asChild>
+              <a href="https://wa.me/5534984312469?text=_Ol%C3%A1!%20vim%20do%20Instagram%20e%20quero%20saber%20mais%20sobre..._" target="_blank" rel="noopener noreferrer">
+                Agendar diagnóstico
+              </a>
             </Button>
           </div>
 
@@ -58,8 +60,10 @@ const Header = () => {
               <a href="#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                 FAQ
               </a>
-              <Button variant="gradient" size="sm" className="w-full mt-2">
-                Agendar diagnóstico
+              <Button variant="gradient" size="sm" className="w-full mt-2" asChild>
+                <a href="https://wa.me/5534984312469?text=_Ol%C3%A1!%20vim%20do%20Instagram%20e%20quero%20saber%20mais%20sobre..._" target="_blank" rel="noopener noreferrer">
+                  Agendar diagnóstico
+                </a>
               </Button>
             </nav>
           </div>
